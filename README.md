@@ -50,21 +50,23 @@ Edit this document to include your answers after each question. Make sure to lea
             2. Access to the outer function's variables
             3. Access to the global variables
 
-        Lexical Scope: is based on where variables and blocks of scope exist at author time, and thus are locked down at the end of the lexing phase. Scope is not defined at runtime, rather it can be accessed at runtime.
+        Lexical Scope: is based on where variables and blocks of scope exist at author time, and thus are
+        locked down at the end of the lexing phase. Scope is not defined at runtime, rather it can be
+        accessed at runtime.
 
 
-        ```js
-        function foo() {  // 'scope of foo' aka lexical scope for bar
-           var memory = 'hello closure';
-              return function bar() {
-                  console.log(memory);
+                ```js
+                function foo() {  // 'scope of foo' aka lexical scope for bar
+                var memory = 'hello closure';
+                    return function bar() {
+                        console.log(memory);
+                        }
                 }
-        }
 
-        // returns the bar function and assigns it to the identifier 'closure’;
-        const closure = foo();
-        closure(); // hello closure
-        ```
+                // returns the bar function and assigns it to the identifier 'closure’;
+                const closure = foo();
+                closure(); // hello closure
+                ```
 
         <code>function scope of outer function === lexical scope of inner function.<code>
 
@@ -77,7 +79,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5.  Why do we need super() in an extended class?
 
-        We need (super) in an extended class to provide inheritance from super class, much like we would do in ES5 with Object.prototype = Object.create(Super.prototype); It can also be used as an object which refers to an instance of Super and call methods of the parent class explicitly.
+        We need (super) in an extended class to provide inheritance from super class, much
+        like we would do in ES5 with Object.prototype = Object.create(Super.prototype);
+
+        It can also be used as an object which refers to an instance of Super and call methods of the
+        parent class explicitly.
 
 ### Git Set up
 
