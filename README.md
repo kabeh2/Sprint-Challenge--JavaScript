@@ -79,7 +79,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5.  Why do we need super() in an extended class?
 
-        We need (super) in an extended class to provide inheritance from super class, much
+        We need super() in an extended class to provide inheritance from parent class, much
         like we would do in ES5 with Object.prototype = Object.create(Super.prototype);
 
         It can also be used as an object which refers to an instance of Super and call methods of the
